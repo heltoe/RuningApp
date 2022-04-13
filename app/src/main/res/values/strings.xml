@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RuningApp</string>
+    <string name="google_maps_key">AIzaSyBcgeR59VKinwPUpTP81rm9tTEp7y65NBo</string>
 </resources>

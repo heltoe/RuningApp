@@ -3,6 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
     id 'androidx.navigation.safeargs.kotlin'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -56,6 +57,7 @@ dependencies {
     def coroutine_lifecycle_version = "2.4.1"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$coroutine_lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:$coroutine_lifecycle_version"
+    implementation "android.arch.lifecycle:extensions:1.1.1"
     // Navigation Components
     def nav_version = "2.4.2"
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
@@ -65,9 +67,8 @@ dependencies {
     implementation "com.github.bumptech.glide:glide:$glide_version"
     kapt "com.github.bumptech.glide:compiler:$glide_version"
     // Google Maps Location
-    def google_map_version = "18.0.2"
-    implementation "com.google.android.gms:play-services-maps:$google_map_version"
-    implementation "com.google.android.gms:play-services-location:$google_map_version"
+    implementation "com.google.android.gms:play-services-maps:18.0.2"
+    implementation "com.google.android.gms:play-services-location:19.0.1"
     // Dagger Core
     def dagger_version = "2.x"
     implementation "com.google.dagger:dagger:$dagger_version"
@@ -78,15 +79,21 @@ dependencies {
     implementation "com.google.dagger:dagger-android-support:$dagger_android_version"
     kapt "com.google.dagger:dagger-android-processor:$dagger_android_version"
     kapt "com.google.dagger:dagger-compiler:$dagger_android_version"
+    // Activity KTX for viewModels()
+    implementation "androidx.activity:activity-ktx:1.4.0"
+    // Dagger - Hilt
+    implementation "com.google.dagger:hilt-android:2.38.1"
+    kapt "com.google.dagger:hilt-compiler:2.38.1"
+
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"
+    kapt "androidx.hilt:hilt-compiler:1.0.0"
     // Easy Permissions
     def easy_permission_version = "3.0.0"
     implementation "pub.devrel:easypermissions:$easy_permission_version"
-    // Timber
+    //     Timber
     def timber_version = "5.0.1"
     implementation 'com.jakewharton.timber:timber:5.0.1'
     // MPA android chart
     def mpa_chart_version = "v3.1.0"
     implementation "com.github.PhilJay:MPAndroidChart:$mpa_chart_version"
-
-    implementation "android.arch.lifecycle:extensions:1.1.1"
 }

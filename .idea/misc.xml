@@ -4,6 +4,25 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/android/RuningApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/java/RuningApp/app/src/main/res/drawable-v24/ic_add_black.xml" value="0.124" />
+        <entry key="..\:/java/RuningApp/app/src/main/res/drawable-v24/ic_close_white.xml" value="0.124" />
+        <entry key="..\:/java/RuningApp/app/src/main/res/drawable-v24/ic_delete.xml" value="0.124" />
+        <entry key="..\:/java/RuningApp/app/src/main/res/drawable-v24/ic_directions_run_black_24dp.xml" value="0.124" />
+        <entry key="..\:/java/RuningApp/app/src/main/res/drawable-v24/ic_graph.xml" value="0.124" />
+        <entry key="..\:/java/RuningApp/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.124" />
+        <entry key="..\:/java/RuningApp/app/src/main/res/drawable-v24/ic_pause_black_24dp.xml" value="0.124" />
+        <entry key="..\:/java/RuningApp/app/src/main/res/drawable-v24/ic_run.xml" value="0.124" />
+        <entry key="..\:/java/RuningApp/app/src/main/res/drawable-v24/ic_settings.xml" value="0.124" />
+        <entry key="..\:/java/RuningApp/app/src/main/res/drawable-v24/ic_stop_black_24dp.xml" value="0.124" />
+        <entry key="..\:/java/RuningApp/app/src/main/res/drawable/ic_android_black_24dp.xml" value="0.124" />
+        <entry key="..\:/java/RuningApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/java/RuningApp/app/src/main/res/layout/fragment_blank.xml" value="0.11302083333333333" />
+        <entry key="..\:/java/RuningApp/app/src/main/res/layout/fragment_run.xml" value="0.11302083333333333" />
+        <entry key="..\:/java/RuningApp/app/src/main/res/layout/fragment_settings.xml" value="0.11302083333333333" />
+        <entry key="..\:/java/RuningApp/app/src/main/res/layout/fragment_setup.xml" value="0.11302083333333333" />
+        <entry key="..\:/java/RuningApp/app/src/main/res/layout/fragment_statistics.xml" value="0.11302083333333333" />
+        <entry key="..\:/java/RuningApp/app/src/main/res/layout/fragment_tracking.xml" value="0.11302083333333333" />
+        <entry key="..\:/java/RuningApp/app/src/main/res/menu/bottom_nam_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

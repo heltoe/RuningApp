@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">RuningApp</string>
     <string name="google_maps_key">AIzaSyBcgeR59VKinwPUpTP81rm9tTEp7y65NBo</string>
+    <string name="google_maps_version">12451000</string>
     <string-array name="filter_options">
         <item>Date</item>
         <item>Running Time</item>

@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/android/RuningApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/android/RuningApp/app/src/main/res/layout/fragment_tracking.xml" value="0.12360688956433637" />
+        <entry key="..\:/android/RuningApp/app/src/main/res/menu/bottom_nam_menu.xml" value="0.11302083333333333" />
+        <entry key="..\:/android/RuningApp/app/src/main/res/menu/toolbar_tracking_menu.xml" value="0.20185185185185187" />
         <entry key="..\:/java/RuningApp/app/src/main/res/drawable-v24/ic_add_black.xml" value="0.124" />
         <entry key="..\:/java/RuningApp/app/src/main/res/drawable-v24/ic_close_white.xml" value="0.124" />
         <entry key="..\:/java/RuningApp/app/src/main/res/drawable-v24/ic_delete.xml" value="0.124" />

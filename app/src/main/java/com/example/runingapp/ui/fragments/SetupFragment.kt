@@ -1,17 +1,33 @@
 package com.example.runingapp.ui.fragments
 
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 import com.example.runingapp.R
 import com.example.runingapp.databinding.FragmentSetupBinding
+import com.example.runingapp.ui.MainActivity
+import com.example.runingapp.utils.Constants.KEY_FIRST_TIME_TOGGLE
+import com.example.runingapp.utils.Constants.KEY_NAME
+import com.example.runingapp.utils.Constants.KEY_WEIGHT
+import com.google.android.material.snackbar.Snackbar
+import com.google.android.material.textview.MaterialTextView
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
-class SetupFragment: Fragment() {
+@AndroidEntryPoint
+class SetupFragment : Fragment() {
     private var _binding: FragmentSetupBinding? = null
     val mBinding get() = _binding!!
+    @Inject
+    lateinit var sharedPref: SharedPreferences
+
+    @set:Inject
+    var isFirstAppOpen = true
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -22,6 +38,22 @@ class SetupFragment: Fragment() {
         return mBinding.root
     }
 
+    private fun personalDataToSharedPref(): Boolean {
+        val name = mBinding.etName.text.toString()
+        val weight = mBinding.etWeight.text.toString()
+        if (name.isEmpty() || weight.isEmpty()) {
+            return false
+        }
+        sharedPref.edit()
+            .putString(KEY_NAME, name)
+            .putFloat(KEY_WEIGHT, weight.toFloat())
+            .putBoolean(KEY_FIRST_TIME_TOGGLE, false)
+            .apply()
+        val toolbarText = "Let's go $name!"
+        (activity as MainActivity).findViewById<MaterialTextView>(R.id.tvToolbarTitle).text = toolbarText
+        return true
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
@@ -29,8 +61,22 @@ class SetupFragment: Fragment() {
 
     override fun onStart() {
         super.onStart()
+
+        if(!isFirstAppOpen) {
+            val navOptions = NavOptions.Builder()
+                .setPopUpTo(R.id.setupFragment, true)
+                .build()
+            findNavController().navigate(
+                R.id.action_setupFragment_to_runFragment)
+        }
+
         mBinding.tvContinue.setOnClickListener {
-            findNavController().navigate(R.id.action_setupFragment_to_runFragment)
+            val success = personalDataToSharedPref()
+            if (success) {
+                findNavController().navigate(R.id.action_setupFragment_to_runFragment)
+            } else {
+                Snackbar.make(requireView(), "Please enter all the fields", Snackbar.LENGTH_SHORT).show()
+            }
         }
     }
 }

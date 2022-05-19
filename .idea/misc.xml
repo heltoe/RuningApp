@@ -20,11 +20,13 @@
         <entry key="..\:/java/RuningApp/app/src/main/res/drawable/ic_android_black_24dp.xml" value="0.124" />
         <entry key="..\:/java/RuningApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/java/RuningApp/app/src/main/res/layout/fragment_blank.xml" value="0.11302083333333333" />
-        <entry key="..\:/java/RuningApp/app/src/main/res/layout/fragment_run.xml" value="0.11302083333333333" />
-        <entry key="..\:/java/RuningApp/app/src/main/res/layout/fragment_settings.xml" value="0.11302083333333333" />
+        <entry key="..\:/java/RuningApp/app/src/main/res/layout/fragment_run.xml" value="0.2" />
+        <entry key="..\:/java/RuningApp/app/src/main/res/layout/fragment_settings.xml" value="0.2" />
         <entry key="..\:/java/RuningApp/app/src/main/res/layout/fragment_setup.xml" value="0.11302083333333333" />
         <entry key="..\:/java/RuningApp/app/src/main/res/layout/fragment_statistics.xml" value="0.11302083333333333" />
-        <entry key="..\:/java/RuningApp/app/src/main/res/layout/fragment_tracking.xml" value="0.11302083333333333" />
+        <entry key="..\:/java/RuningApp/app/src/main/res/layout/fragment_tracking.xml" value="0.264" />
+        <entry key="..\:/java/RuningApp/app/src/main/res/layout/item_run.xml" value="0.12360688956433637" />
+        <entry key="..\:/java/RuningApp/app/src/main/res/layout/marker_view.xml" value="0.253125" />
         <entry key="..\:/java/RuningApp/app/src/main/res/menu/bottom_nam_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
